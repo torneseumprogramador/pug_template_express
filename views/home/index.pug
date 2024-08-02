@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  hr
+  //- - let titulo = "Um desafio feito com os alunos usando o pug"
+  include ../partials/card.pug
+  +card(lista)
+  //- +card(titulo, false)
